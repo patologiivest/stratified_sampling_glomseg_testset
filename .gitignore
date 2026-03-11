@@ -1,1 +1,5 @@
 *.png
+*.cpython-311.pyc
+*.cpython-313.pyc
+__pycache__/
+venv/
