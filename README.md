@@ -1,12 +1,12 @@
-# Project Title
+# Balanced weighted sampling
 
 ## Description
-Brief description of what this project does.
+This repo was created to sample 500 slides from the renal registry whilst balancing for different variables to create a test dataset for glomerular segmentation.
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Balanced weighted sampling function   
+- Sample evaluation metrics
+- Sample evaluation visualizations
 
 ## Installation
 ```bash
@@ -14,19 +14,12 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+For this specific usecase, most likely useless for you. 
 ```python
-# Example usage
+python ./scripts/prep_for_stratified_sampling.py
 ```
+Then execute the jupyter notebook with the created data.
+Mostly just read through the validation functions for inspiration and adapt them to your use case.
 
 ## Requirements
 - Python 3.13
-- Other dependencies
-
-## Contributing
-Contributions are welcome. Please fork the repository and create a pull request.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Author
-Your Name
