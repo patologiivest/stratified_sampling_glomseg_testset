@@ -1,0 +1,2 @@
+patient_fnr,wsi_anon_name,stain,slide_id,year,patho_slide_id,patho_scanner_manufacturer,diagnosis,lab_name,number_glom,number_glom_crescent,super_stain
+0000000000,2020_000000_anon,PAS,000000,2020,000000,Aperio,ANCA assosiert glomerulonefritt,GADE,18,13,PAS
