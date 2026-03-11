@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 
 ## Requirements
-- Python 3.x
+- Python 3.13
 - Other dependencies
 
 ## Contributing
