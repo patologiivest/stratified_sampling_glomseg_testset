@@ -23,3 +23,11 @@ Mostly just read through the validation functions for inspiration and adapt them
 
 ## Requirements
 - Python 3.13
+
+## Questions on the way:
+
+It was decided that all immune stains should be grouped and downsampled "as if only one of them existed". HE and HES are grouped and downsampled the same way. Same for masson trichrome and AFOG.
+We upsample the slides that have crescent glomeruli because of their rarity.
+Retained sampling variables are diagnosis, scanner type, laboratory of origin, stain, and year.
+Should we maximize for the number of glomeruli present on the slide? Didn't
+Should we filter based on quality? Didn't
