@@ -310,6 +310,7 @@ df = stratification_df.drop(
         "biopsy_date_str",
     ]
 )
+df.drop_duplicates(subset=["wsi_anon_name"], inplace=True)
 
 df.to_csv("../csv_data/stratification_data.csv", index=False)
 
