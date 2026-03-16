@@ -5,7 +5,7 @@ from itables import init_notebook_mode
 init_notebook_mode(all_interactive=True)
 
 
-def balanced_weighted_sample(df, balance_cols, N, power=1.0, random_state=0):
+def balanced_weighted_sample(df, balance_cols, N, power=1.0, random_state=0, return_weights=False):
     weights = pd.Series(1.0, index=df.index)
 
     for col in balance_cols:
@@ -26,4 +26,7 @@ def balanced_weighted_sample(df, balance_cols, N, power=1.0, random_state=0):
     weights = weights + weights * 3 * has_crescent.astype(float)
     weights /= weights.sum()
 
-    return df.sample(n=N, weights=weights, random_state=random_state)
+    sample = df.sample(n=N, weights=weights, random_state=random_state)
+    if return_weights:
+        return sample, weights
+    return sample
